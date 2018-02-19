@@ -1,0 +1,5 @@
+{
+  "api_key": "INSERT API KEY HERE",
+  "api_version": "v3",
+  "riot_api_endpoint": "https://na1.api.riotgames.com/lol"
+}

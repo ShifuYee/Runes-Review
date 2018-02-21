@@ -1,12 +1,11 @@
 'use strict';
-// import { combineReducers } from 'redux';
+import { combineReducers } from 'redux';
+import summoners from './summoners';
 
 const initialState = {};
 
-const rootReducer = function (state = initialState, action) {
-  switch (action.type) {
-    default: return state;
-  }
-};
+const rootReducer = combineReducers({
+  summoners
+});
 
 export default rootReducer;

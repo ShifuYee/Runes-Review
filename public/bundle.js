@@ -25867,7 +25867,11 @@ var _Summoner = __webpack_require__(278);
 
 var _Summoner2 = _interopRequireDefault(_Summoner);
 
-var _configs = __webpack_require__(279);
+var _MatchHistory = __webpack_require__(279);
+
+var _MatchHistory2 = _interopRequireDefault(_MatchHistory);
+
+var _configs = __webpack_require__(280);
 
 var _configs2 = _interopRequireDefault(_configs);
 
@@ -25909,7 +25913,8 @@ var Root = function (_Component) {
             _reactRouterDom.Switch,
             null,
             _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Home2.default }),
-            _react2.default.createElement(_reactRouterDom.Route, { path: '/summoner', component: _Summoner2.default })
+            _react2.default.createElement(_reactRouterDom.Route, { path: '/summoner', component: _Summoner2.default }),
+            _react2.default.createElement(_reactRouterDom.Route, { path: '/matches', component: _MatchHistory2.default })
           )
         )
       );
@@ -29127,9 +29132,63 @@ exports.default = Summoner;
 
 /***/ }),
 /* 279 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var MatchHistory = function (_Component) {
+  _inherits(MatchHistory, _Component);
+
+  function MatchHistory() {
+    _classCallCheck(this, MatchHistory);
+
+    return _possibleConstructorReturn(this, (MatchHistory.__proto__ || Object.getPrototypeOf(MatchHistory)).apply(this, arguments));
+  }
+
+  _createClass(MatchHistory, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'h1',
+          null,
+          'Match History Page'
+        )
+      );
+    }
+  }]);
+
+  return MatchHistory;
+}(_react.Component);
+
+exports.default = MatchHistory;
+
+/***/ }),
+/* 280 */
 /***/ (function(module, exports) {
 
-module.exports = {"apiKey":"RGAPI-f63f41df-2bc9-4124-bd27-ddf09f1d1949","apiQuery":"?api_key=","apiVersion":"/v3","riotApiEndpoint":"https://na1.api.riotgames.com/lol"}
+module.exports = {"apiKey":"RGAPI-1b410af4-a230-4e06-8eb7-329c160df82b","apiQuery":"?api_key=","apiVersion":"/v3","riotApiEndpoint":"https://na1.api.riotgames.com/lol"}
 
 /***/ })
 /******/ ]);
